@@ -1,0 +1,40 @@
+<html>
+  <head>
+      <style>
+          div{
+              margin: 5px;
+              padding: 5px;
+          }
+
+          p {
+              margin: 5px;
+              padding: 5px;
+              float: left;
+
+              text-align: center;
+              width: auto;
+              min-width: 80px
+          }
+      </style>
+  </head>    
+  <body>
+    <div>
+        <p id="one"> Etikette: </p> 
+        <div>
+            <input id="input-one"></input> 
+            <button onclick="read('one')"> say it load</button>
+            <button  onmousedown="start_record('input-one')"> record </button>
+        </div>  
+    </div>
+    <div>
+        <p id="two"> label 2: </p>
+        <div>
+            <input id="input-two"></input> 
+            <button onclick="read('two')"> say it load</button>
+            <button onmousedown="start_record('input-two')"> record </button>
+        </div>
+    </div>
+    <script src="script/script.js"></script>      
+  </body>
+  
+</html>
