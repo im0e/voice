@@ -14,7 +14,6 @@ function start_record(id) {
     record_notification.currentTime = 0;
     output = document.getElementById(id);
     recognition.start();
-    console.log('Ready to receive a color command.');
 }
 
 recognition.onresult = function(event) {
