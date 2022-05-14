@@ -64,11 +64,10 @@ recognition.onresult = function (event) {
   output.value += txt;
 };
 
-recognition.onend = function(){
-  recognition.start();
-}
-
-
 recognition.onspeechend = function () {
-  recognition.stop();
+  if(counter < 5){
+    recognition.start();
+  } else {
+    recognition.stop();
+  }
 };
